@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact Me - Farrah's Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #D5FCC2;
+            color: #333333;
+            font-family: Cambria;
+            text-align: center;
+        }
+
+        .banner img {
+            display: block;
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .navigation {
+            padding: 10px 10px;
+            background-color: #333333;
+            border-bottom: 1px solid #d8c7f2;
+
+       }
+
+        .navigation a {
+            display: inline-block;
+            margin: 6px;
+            padding: 10px 18px;
+            color: #FFFFFF;
+            text-decoration: none;
+            background-color: #2F4F3E;
+            border: 1px solid #2F4F3E;
+            border-radius: 24px;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            width: 88%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 0 40px;
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            color: #6f56a8;
+            font-size: 46px;
+        }
+
+        h2,
+        h3 {
+            color: #6f56a8;
+        }
+
+        .intro-text {
+            max-width: 700px;
+            margin: 0 auto 24px;
+            line-height: 1.7;
+        }
+
+        .card {
+            margin: 22px auto;
+            padding: 24px 20px;
+            background-color: #C1F5A9;
+            border: 1px solid #d8c7f2;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(155, 126, 219, 0.12);
+        }
+
+        .contact-item {
+            display: inline-block;
+            width: 180px;
+            margin: 10px;
+            vertical-align: top;
+        }
+
+        .contact-link {
+            color: #6f56a8;
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        .social-button {
+            display: inline-block;
+            margin: 8px;
+            padding: 10px 18px;
+            color: #6f56a8;
+            text-decoration: none;
+            background-color: #f8f3ff;
+            border: 1px solid #d8c7f2;
+            border-radius: 24px;
+        }
+
+        .social-button:hover {
+            background-color: #eadcff;
+        }
+
+        .custom-list {
+            display: inline-block;
+            margin: 15px 0 0;
+            padding-left: 24px;
+            text-align: left;
+            line-height: 1.8;
+        }
+
+        .custom-list li::marker {
+            content: "> ";
+            color: #9b7edb;
+        }
+
+        .contact-form {
+            width: 100%;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 14px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #d8c7f2;
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: #3b2f4a;
+            box-sizing: border-box;
+        }
+
+        .form-button {
+            padding: 10px 18px;
+            border: 1px solid #d8c7f2;
+            border-radius: 20px;
+            background-color: #f8f3ff;
+            color: #6f56a8;
+            box-shadow: 0 4px 12px rgba(155, 126, 219, 0.12);
+        }
+
+        .form-button:hover {
+            background-color: #eadcff;
+        }       
+
+        footer {
+            padding: 18px 10px 24px;
+            border-top: 1px solid #d8c7f2;
+            background-color: #efe5ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner Section -->
+    <div class="banner">
+        <img src="leaf.png" alt="Leaf">
+    </div>
+
+    <!-- Navigation Section -->
+    <div class="navigation">
+        <a href="home.html">Home</a>
+        <a href="index.html">Profile</a>
+        <a href="education.html">Education</a>
+        <a href="workexp.html">Work Experience</a>
+        <a href="hobbiesinterest.html">Hobbies &amp; Interest</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+        <!-- Contact Header Section -->
+        <div>
+            <h1>Contact Me</h1>
+            <p class="intro-text">Feel free to contact me through any of the options below.</p>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="card">
+            <h2>Get in Touch</h2>
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p><a href="mailto:farrahadibah50@gmail.com" class="contact-link">farrahadibah50@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>Phone</h3>
+                <p><a href="tel:018-3930686" class="contact-link">018-3960686</a></p>
+            </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="card form-card">
+            <h2>Send Me a Message</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input id="subject" type="text" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-input" rows="5"></textarea>
+                </div>
+                <button type="submit" class="form-button">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Social Account Section -->
+        <div class="card">
+            <h2>Social Account</h2>
+            <a href="https://wa.me/60123456789" class="social-button">WhatsApp</a>
+            <ul class="custom-list">
+                <li>WhatsApp for direct messages</li>
+            </ul>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        Farrah's Portfolio Copyright 2026 | Best Viewed: Google Chrome | Last Updated: June 2026
+    </footer>
+</body>
+</html>
